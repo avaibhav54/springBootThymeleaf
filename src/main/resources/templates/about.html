@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeLeaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+<h1>Hello about page</h1>
+<h1>Name of the owner is </h1>
+<h1 th:text="${name}"></h1>
+<h1>------------------------------------------------</h1>
+<br><br><br><br><br>
+<span th:text="${List}"></span>
+<ul>
+<li th:each="n,status:${List}">
+<span th:text="${status.index}+' ' +${n}">
+
+</span>
+</li>
+
+</ul>
+
+</body>
+</html>
